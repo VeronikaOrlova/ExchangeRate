@@ -1,0 +1,130 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(238, 225, 215);
+    margin: 0;
+}
+
+h1 {
+    padding: 15px 25px;
+    background-color:   floralwhite;
+    color: rgb(0, 0, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    box-shadow:0 0 20px black;
+    }
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    margin:  0 auto;
+    background-color: rgb(238, 225, 215);
+    box-shadow:0 0 20px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.button {
+    width: 100px;
+    height: 30px;
+    background-color: rgb(231, 209, 195);
+    border-radius: 20px;
+}
+
+.period{
+    width: 200px;
+    height: 30px;
+    border-radius: 100px;
+    background: rgb(235, 229, 225);
+    fill-opacity: 50%;
+    border: 1px solid rgb(51, 33, 11);
+    color: rgb(51, 33, 11);
+}
+
+select{
+    width: 150px;
+    height: 30px;
+    background-color: rgb(241, 215, 197);
+    border-radius: 20px;
+    border: 1px solid rgb(51, 33, 11);
+}
+
+
+.button:hover, .period:hover, select:hover {
+    background-color: rgb(255, 247, 235);
+    fill-opacity: 50%;
+}
+
+.buttons {
+    margin-left: 150px;
+}
+
+.selectCur {
+    margin-left: 330px;
+}
+
+.periodDate {
+    margin-left: 160px;
+}
+
+input {
+    margin: 0 20px;
+}
+
+p {
+    margin: 15px;
+}
+
+select, button {
+    margin: 15px;
+}
+
+.logo {
+    background-color: none;
+    height: 80px;
+    width: 80px;
+}
+
+
+td {
+    padding: 5px;
+    width: 200px;
+    text-align: center;
+    border-spacing: 0px;
+    box-shadow: 2px 2px 5px #BABECC,
+               -5px -5px 10px #ffffff73;
+
+  }
+
+th {
+    box-shadow: 1px 1px 3px #BABECC,
+               -5px -5px 10px #ffffff73;
+  }
+  
+.table {
+    align-items: center;
+    overflow-y: auto;
+    height: 580px;
+}
+
+.main{
+    display: flex;
+    justify-content: space-around;
+}
+
+#chart_div rect {
+    opacity: 40%;
+}
+
+.mainCur {
+    display: flex;
+    justify-content: space-around;
+    background-color: floralwhite;
+    box-shadow:0 0 20px black;   
+}
+
+p {
+    font-size: 20px;
+    font-weight: bolder; 
+}
