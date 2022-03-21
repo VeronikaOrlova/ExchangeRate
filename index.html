@@ -11,16 +11,15 @@
 </head>
 <body>
   
-    <h1><img src="/img/logo.gif" alt="" class="logo">  Actual Current Exchange Rate</h1> 
+    <h1><img src="/img/logo.gif" alt="" class="logo"> <span>Actual Current</span>  Exchange Rate</h1> 
 
-    <div class="mainCur">
-        
-    </div>   
-         
+    <div class="today">Today Course</div>  
+    <div class="mainCur"></div> 
+    
     <div class='wrapper'>
        
         <div>
-            <select class="selectCur">
+            <select class="selectCur" value="">
                 <option class="option">Choose currency</option>
             </select>
         </div>
@@ -38,6 +37,9 @@
         </div>     
 
     </div>
+                   
+    <div class="name">График выбранной валюты за указанный период:</div>
+    
 
     <div class="main">
 
@@ -47,8 +49,9 @@
             <th></th>
            </table>
        </div>
-
-       <div id="chart_div"></div>
+          
+        <div id="chart_div"></div>
+    
     </div>
 
     <script src="/script/main.js"></script>

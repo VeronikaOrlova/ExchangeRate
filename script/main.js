@@ -60,6 +60,25 @@ selectCur.addEventListener('change', () => {
     getCur(allCurrency);
   })
 
+function getUSD (argument){
+
+    const USD = argument[11]
+    selectCur.value = USD.Cur_ID
+    getDataWorker2(USD)
+    getPeriod(-1, `week`)
+}
+    
+    
+function getDataWorker2(el) {
+    
+    el => {createTable(`${el.Date.slice(0,10)}`, ` ${el.Cur_OfficialRate} ` + `BYN`)}
+    arrayCurs = [];
+    el => arrayCurs.push([new Date(el.Date), el.Cur_OfficialRate])
+    
+    createGraph()
+}
+
+
 //worker
 const worker = new Worker('/script/worker.js');
 
@@ -70,12 +89,13 @@ worker.addEventListener('message', ({data}) => {
   
   let allCurrency;
   
-  const mapping = {
+const mapping = {
       cur: (payload) => {
           allCurrency = payload;
           createSelect(allCurrency);
+          getUSD(allCurrency);
       }
-  }
+}
   
   
 function getCur(allCurrency) {
@@ -133,7 +153,7 @@ function getDataWorker(el) {
     let rateArray = el;
 
     rateArray.forEach((json) => {
-            createTable(`${json.Date.slice(0,10)}`, ` ${count} ` + ` ${json.Cur_OfficialRate} ` + `BYN`)
+            createTable(`${json.Date.slice(0,10)}`, ` ${json.Cur_OfficialRate} ` + `BYN`)
             })
     arrayCurs = [];
     rateArray.forEach(el => arrayCurs.push([new Date(el.Date), el.Cur_OfficialRate]))

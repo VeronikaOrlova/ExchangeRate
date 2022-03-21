@@ -11,8 +11,9 @@ h1 {
     color: rgb(0, 0, 0);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bolder;
+    font-style:italic;
     box-shadow:0 0 20px black;
-    }
+}
 
 .wrapper {
     width: 100%;
@@ -30,6 +31,7 @@ h1 {
     height: 30px;
     background-color: rgb(231, 209, 195);
     border-radius: 20px;
+    font-weight: bold;
 }
 
 .period{
@@ -48,6 +50,8 @@ select{
     background-color: rgb(241, 215, 197);
     border-radius: 20px;
     border: 1px solid rgb(51, 33, 11);
+    color: #d3773a;
+    font-weight: bolder;
 }
 
 
@@ -95,12 +99,12 @@ td {
     box-shadow: 2px 2px 5px #BABECC,
                -5px -5px 10px #ffffff73;
 
-  }
+}
 
 th {
     box-shadow: 1px 1px 3px #BABECC,
                -5px -5px 10px #ffffff73;
-  }
+}
   
 .table {
     align-items: center;
@@ -114,17 +118,42 @@ th {
 }
 
 #chart_div rect {
-    opacity: 40%;
+    opacity: 30%;
 }
 
 .mainCur {
     display: flex;
     justify-content: space-around;
     background-color: floralwhite;
-    box-shadow:0 0 20px black;   
+    box-shadow:0 0 20px black;
 }
 
 p {
     font-size: 20px;
-    font-weight: bolder; 
+    font-weight: bolder;
+    color: #0f0904;    
 }
+
+.today {
+    text-align: center;
+    font-size: 23px;
+    font-weight: bolder;
+    color: rgba(255, 244, 221, 0.897);
+}
+
+span {
+    font-weight: 700;
+    color: #dd8347;
+    background-color: floralwhite;
+}
+
+.name {    
+    font-size: 18px;
+    font-weight: bold;
+    color: #b46a39;
+    text-align: center;
+    font-style: italic;
+}
+
+
+    
